@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: beaufortforlol-bold;
+    src: url("../fonts/beaufortforlol-bold.otf") format("opentype");
+}
+
+body{
+    background: black;
+}
+
+.row{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both; 
+    display: table; 
+}
+
+header{
+    height: 100px;
+}
+
+.logo{
+    float: right;
+    width: 230px;
+    height: 100px;
+}
+
+.logo-imagen{
+    float: right;
+    margin-right: 15px;
+    margin-top:20px;
+    width: 150px;
+    height: 70px;
+}
+
+ul{
+    text-decoration: none;
+}
+
+nav ul li{
+    margin-right: 5px;
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-radial-gradient(bottom, #FDE08D, #DF9F28, #8f6B29);
+}
+
+nav ul li:hover{
+    background: -webkit-radial-gradient(bottom, #FDE08D, rgb(250, 200, 109), #8f6B29);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main{
+    width: 80%;
+    margin: 30px auto;
+    border: 20px solid transparent;
+    border-image-source: url(../img/border.png);
+    border-image-slice: 40;
+    border-image-outset: 10px;
+    border-style: inset;
+    padding-top: 20px;
+    background: #EFEAEA;
+}
+
+.top{
+    position: relative;
+    width: 1000px;
+    height: 176px;
+    margin: 20px auto;
+    background: #EFEAEA;
+}
+
+.top ul{
+    width: 1010px;
+    height: 176px;
+}
+
+.top ul li{
+    width: 192px;
+    height: 176px;
+    float: left;
+    margin-right: 10px;
+    border: 3px soliD white;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.item{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.top ul li a{
+    display: block;
+    width: 140px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.top ul li a img{
+    width: 140px;
+    height: 140px;    
+}
+
+.top ul li a label{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: auto;
+}
+
+section{
+    position: relative;
+    margin: 30px auto;
+    width: 1000px;
+    height: 620px;
+}
+
+section aside{
+    position: absolute;
+    left: ;
+    top: ;
+    border: 1px solid black;
+    width: 399px;
+    height: 640px;
+    border: 5px solid lightgray;
+  
+}
+
+section aside div div ul li{
+    width: 103px;
+    height: 170px;
+    margin: 0px 10px;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+section aside div div ul li a img{
+    width: 100px;
+    height: 150px;
+}
+
+
+.contenedor-imagenes{
+    width: 388px;
+    height: 630px;
+    background: white;
+    padding: 5px;
+}
+.contenedor-imagenes-opciones{
+    width: 380px;
+    height: 190px;
+    opacity: 1;
+}
+.imagen-ampliada{
+    width: 380px;
+    height: 430px;
+}
+
+.imagen-ampliada img{
+    padding: 10px;
+    width: 373px;
+    height: 430px;
+}
+
+
+section article{
+    position: absolute;
+    left: 410px;
+    width: 590px;
+    height: 640px;
+    background: #C4BFBF;
+    padding: 15px;
+    border: 5px inset lightgray;
+}
+
+section article h1{
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: beaufortforlol-bold,Arial, sans-serif;
+    text-transform: uppercase;
+}
+section article h2{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section article h3{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+section article p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section article p::first-letter{
+    font-size: 60px;
+    font-family: beaufortforlol-bold,Arial, sans-serif;
+}
+
+nav ul{
+    display: flex; /* Si no se utiliza display inline block en li*/
+}
+
+nav a{
+    display: block;
+}
+
+nav ul li ul{
+    display: none;
+}
+
+nav ul li a:hover + ul, nav ul li ul:hover{
+    display: block;
+}
+
+.prueba{
+    width: 1200px;
+    height: 500px;
+    background: white;
+}
+
+.prueba div{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    float: left;
+}
+.prueba .c1{
+    padding: 5px;
+    width: 298px;
+    height: 100px;
+    background: grey;
+}
+.prueba .c2{
+    padding: 5px;
+    width: 298px;
+    height: 100px;
+    background: lightblue;
+    margin-top: 10px;
+}
+
+.prueba div div div{
+    width: 95px;
+    height: 85px;
+    border: 1px solid black;
+}
